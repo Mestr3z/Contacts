@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Uniport</title>
+</head>
+
+<body class="body">
+    <div class="page">
+        <header class="header">
+            <div class="header__content">
+                <a class="header__logo_link">
+                    <img class="header__logo" src="images/logo.svg" alt="логотип компании">
+                    <img class="header__logo_name" src="./images/logo 2.svg" alt="изображение часов">
+                </a>
+                <div class="flexx">
+                <div class="header__menu">
+                    <img class="logos" src="./images/time.svg" alt="изображение часов">
+                    <div class="header__menu_works">
+                        <p class="text">Время работы</p>
+                        <p class="text">Круглосуточно</p>
+                    </div>
+                </div>
+                <div class="header__menu">
+                    <img class="logos" src="./images/location.svg" alt="изображение метки локации">
+                    <div class="header__menu_works">
+                        <p class="text">Адрес</p>
+                        <p class="text">Санкт-Петербург</p>
+                    </div>
+                </div>
+                <div class="header__icons">
+                    <img class="header__icons_img icn" src="./images/message.svg" alt="иконка почты">
+                    <img class="header__icons_img" src="./images/telegram.svg" alt="логотип telegram">
+                    <img class="header__icons_img" src="./images/whatsapp.svg" alt="логотип whatsapp">
+                </div>
+                <div class="header__contacts">
+                    <a href="#" class="header__contacts_number">+# (###) ###-##-##</a>
+                    <a href="#" class="header__contacts_mail">####@########.##</a>
+                </div>
+                <a href="#" class="header__cart">
+                    <img class="header__cart_logo" src="./images/shopping-cart.svg"
+                        alt="изображение продуктовой корзины">
+                    <div class="header__cart_list">
+                        <p class="header__cart_list_name">Корзина</p>
+                        <p class="header__cart_list_items">1<span class="header__cart_list_items_text"> товар</span></p>
+                        <p class="header__cart_list_cost">7 650 <span
+                                class="header__cart_list_cost_currency">руб.</span></p>
+                    </div>
+                </a>
+                <div class="header__burger" onclick="toggleMenu()">
+                    <div class="header__bar bar"></div>
+                    <div class="header__bar bar"></div>
+                    <div class="header__bar bar"></div>
+                </div>
+            </div>
+        </header>
+       
+            <section class="menu">
+                <div class="menu__list">
+                    <div class="menu__item">
+                        <p class="menu__text menu__first-list">ПРОДУКЦИЯ <img class="menu__down" src="./images/down.png"
+                                alt="иконка развертывания списка"> </p>
+                        <ul class="submenu submenu__first-list">
+                            <li class="submenu__li">Газобетон D-300</li>
+                            <li class="submenu__li">Газобетон D-400</li>
+                            <li class="submenu__li">Газобетон D-500</li>
+                            <li class="submenu__li">Газобетон D-600</li>
+                            <li class="submenu__li">Газобетон D-700</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="menu__link">КАЛЬКУЛЯТОР</a>
+                    <a href="#" class="menu__link">ЦЕНЫ</a>
+                    <a href="#" class="menu__link">ДОСТАВКА И ОПЛАТА</a>
+                    <a href="#" class="menu__link">БЛОГ</a>
+                    <div class="menu__item">
+                        <p class="menu__text menu__second-list">О КОМПАНИИ <img class="menu__down"
+                                src="./images/down.png" alt="иконка развертывания списка"></p>
+                        <ul class="submenu submenu__second-list">
+                            <li class="submenu__li">О производстве</li>
+                            <li class="submenu__li">Реквизиты</li>
+                            <li class="submenu__li">Партнеры</li>
+                            <li class="submenu__li">Документы</li>
+                            <li class="submenu__li">Вакансии</li>
+                            <li class="submenu__li">Сотрудничество</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="menu__link">ЧАСТЫЕ ВОПРОСЫ</a>
+                    <a href="#" class="menu__link">КОНТАКТЫ</a>
+                    <button class="menu__button" id="menuButton">ЗАКАЗАТЬ ЗВОНОК</button>
+                </div>
+            </section>
+            <section class="mainpage">
+                <section class="headers">
+                    <h1 class="headers__name">Контакты</h1>
+                    <div class="headers__choose">
+                        <a href="#" class="headers__choose_main">Главная</a>
+                        <p class="headers__choose_slash">/</p>
+                        <a href="#" class="headers__choose_inactive">Наши контакты</a>
+                    </div>
+                </section>
+            <section class="catalog">
+                    <section class="cards">
+                        <section class="advantages">
+                            <div class="advantages__unite">
+                            <div class="slider-buttons">
+                            <button class="buttonLeft" id="slideLeft"></button>
+                            <button class="buttonRight" id="slideRight"></button>
+                        </div>
+                        </div>
+                            <div class="advantages__flex">
+                                <div class="advantages__block">
+                                    <img class="advantages__block_img" src="./images/russia 1.svg">
+                                    <p class="advantages__block_text">Доставим в любую точку РФ</p>
+                                </div>
+                                <div class="advantages__block">
+                                    <img class="advantages__block_img2" src="./images/date.svg">
+                                    <p class="advantages__block_text2">Срок доставки от 1 дня</p>
+                                </div>
+                                <div class="advantages__block">
+                                    <img class="advantages__block_img" src="./images/truck.svg">
+                                    <p class="advantages__block_text">Свой автопарк техники</p>
+                                </div>
+                                <div class="advantages__block">
+                                    <img class="advantages__block_img2" src="./images/24-hours.svg">
+                                    <p class="advantages__block_text2">Работаем без выходных</p>
+                                </div>
+                                <div class="advantages__block">
+                                    <img class="advantages__block_img2" src="./images/qr.svg">
+                                    <p class="advantages__block_text2">Сохрани наши контакты</p>
+                                </div>
+                            </div>
+                            
+                        </section>
+
+                <div class="cards__map">
+                    <div class="cards__map_block">
+                    <p class="cards__map_block_text">Офис</p>
+                    <a class="cards__map_block_adress" href="#">
+                        <p class="adress"><span>Адрес: </span>г. Санкт-Петербург, пр. Обуховской Обороны 271, лит А, помещение 318</p>
+                    </a>
+                    <a class="cards__map_block_adress" href=tel:89219985985><p class="adress">Телефон:</p>+7 (921) 998-59-85</a>
+                    <a class="cards__map_block_adress" href="#" target="_blank">Написать в Telegram</a>
+                    <a class="cards__map_block_adress" href="#" target="_blank">Написать в WhatsApp</a>
+                    <a class="cards__map_block_adress" href=mailto:info@uniblock.ru>
+                        <p class="adress">Почта:<p class="factadress">info@uniblock.ru</p></p>
+                    </a>
+                    <ul class="cards__ul">
+                        <li class="cards__li"><button class="cards__button-director" id="directorButton">Написать директору</button></li>
+                        <li class="cards__li"><a class="cards__li_link" href="#">Для оптовых клиентов</a></li>
+                        <li class="cards__li"><button class="cards__button-director" href="#" id="cooperationButton">Предложить сотрудничество</button></li>
+                        <li class="cards__li"><a class="cards__li_link" href="#">Наши реквизиты</a></li>
+                    </ul>
+                </div>
+                
+                <div class="cards__map_image-container">
+                    <div class="map">
+                    <script type="text/javascript" charset="utf-8" async
+                 src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0e3ff60ff37e6d8f0103baca971fe445f186014610011756637295663330e62b&amp;width=660&amp;height=389&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+                </div>
+                </div>
+                <div class="cards__map">
+                    <div class="cards__map_image-container card__map_second-image-container">
+                        <div class="map">
+                            <script type="text/javascript" charset="utf-8" async
+                            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0e3ff60ff37e6d8f0103baca971fe445f186014610011756637295663330e62b&amp;width=660&amp;height=389&amp;lang=ru_RU&amp;scroll=true"></script>
+                        </div>
+                        </div>
+                    <div class="cards__map_block">
+                        <p class="cards__map_block_text">Производство</p>
+                        <a class="cards__map_block_adress" href="#">
+                            <p class="adress"><span>Адрес:</span> г. Санкт-Петербург, пр. Обуховской Обороны 271, лит А, помещение 318</p></p>
+                        </a>
+                        <a class="cards__map_block_adress" href=tel:89219985985><p class="adress">Телефон:</p>+7 (921) 998-59-85</a>
+                        <a class="cards__map_block_adress" href="#">Написать в Telegram</a>
+                        <a class="cards__map_block_adress" href="#">Написать в WhatsApp</a>
+                        <a class="cards__map_block_adress" href=mailto:info@uniblock.ru>
+                            <p class="adress">Почта:<p class="factadress">proizvodstvo@uniblock.ru</p></p>
+                        </a>
+                        <ul class="cards__ul">
+                            <li class="cards__li"><button class="cards__button-director" id="buttonControl">Контроль качества</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </section>
+        </section>
+      
+                </div>
+                <footer class="footer">
+                    <section class="info">
+                        <div class="column__product">
+                            <h3 class="column__header">Продукция <img class="footer__down"
+                                src="./images/down.png" alt="иконка развертывания списка"></h3>
+                            <ul class="column__products">
+                                <a href="#" class="footer__link">
+                                    <li class="column__products_list">Газобетон D-300</li>
+                                </a>
+                                <a href="#" class="footer__link">
+                                    <li class="column__products_list">Газобетон D-300</li>
+                                </a>
+                                <a href="#" class="footer__link">
+                                    <li class="column__products_list">Газобетон D-300</li>
+                                </a>
+                                <a href="#" class="footer__link">
+                                    <li class="column__products_list">Газобетон D-300</li>
+                                </a>
+                                <a href="#" class="footer__link">
+                                    <li class="column__products_list">Газобетон D-300</li>
+                                </a>
+                                <a href="#" class="footer__link">
+                                    <li class="column__products_list">U-блоки</li>
+                                </a>
+                                <a href="#" class="footer__link">
+                                    <li class="column__products_list">Армированые перемычки</li>
+                                </a>
+                                <a href="#" class="footer__link">
+                                    <li class="column__products_list">Некондиция</li>
+                                </a>
+                                <a href="#" class="footer__link">
+                                    <li class="column__products_list">Инструменты</li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="column__about">
+                            <h3 class="column__header">О компании <img class="footer__down"
+                                src="./images/down.png" alt="иконка развертывания списка"></h3>
+                            <ul class="column__products">
+                                <a href="#" class="footer__link">
+                                    <li class="column__products_list">О производстве</li>
+                                </a>
+                                <a href="#" class="footer__link">
+                                    <li class="column__products_list">Реквизиты</li>
+                                </a>
+                                <a href="#" class="footer__link">
+                                    <li class="column__products_list">Партнеры</li>
+                                </a>
+                                <a href="#" class="footer__link">
+                                    <li class="column__products_list">Документы</li>
+                                </a>
+                                <a href="#" class="footer__link">
+                                    <li class="column__products_list">Вакансии</li>
+                                </a>
+                                <a href="#" class="footer__link">
+                                    <li class="column__products_list">Сотрудничество</li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="column__info">
+                            <h3 class="column__header">Полезная информация <img class="footer__down"
+                                src="./images/down.png" alt="иконка развертывания списка"></h3>
+                            <ul class="column__products">
+                                <a href="#" class="footer__link">
+                                    <li class="column__products_list">Калькулятор</li>
+                                </a>
+                                <a href="#" class="footer__link">
+                                    <li class="column__products_list">Цены</li>
+                                </a>
+                                <a href="#" class="footer__link">
+                                    <li class="column__products_list">Доставка и оплата</li>
+                                </a>
+                                <a href="#" class="footer__link">
+                                    <li class="column__products_list">Блог</li>
+                                </a>
+                                <a href="#" class="footer__link">
+                                    <li class="column__products_list">Новости</li>
+                                </a>
+                                <a href="#" class="footer__link">
+                                    <li class="column__products_list">Частые вопросы</li>
+                                </a>
+                                <a href="#" class="footer__link">
+                                    <li class="column__products_list">Контакты</li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="column__company">
+                            <a href="#" class="column__company_logos">
+                                <img src="./images/logo.svg" alt="логотип компании" class="column__company_image">
+                                <img src="./images/logo 2.svg" alt="название компании"
+                                    class="column__company_secondimage footer-image2">
+                            </a>
+                            <div class="column__company_contacts">
+                                <div class="column__company_contacts-left">
+                                    <p class="column__company_text">Телефон:</p>
+                                    <p class="column__company_text">Почта:</p>
+                                    <p class="column__company_text">Режим:</p>
+                                    <p class="column__company_text">Адрес:</p>
+                                </div>
+                                <div class="column__company_contacts-right">
+                                    <a href="#" class="column__company_link">+# (###) ###-##-##</a>
+                                    <a href="#" class="column__company_link">####@########.##</a>
+                                    <p class="column__company_textright">Круглосуточно</p>
+                                    <p class="column__company_textright">Санкт-Петербург</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="footer__credits">
+                        <div class="footer__credits_text">
+                            <p class="footer__credits_text-save">© 2023. Все права защищены.</p>
+                            <a href="#" class="footer__credits_text-personaldata">Политика обработки персональных данных</a>
+                        </div>
+                    </section>
+                </footer>
+        </div>
+        <script src="./script.js"></script>
+</body>

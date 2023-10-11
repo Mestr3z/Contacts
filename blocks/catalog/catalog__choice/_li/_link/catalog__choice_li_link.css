@@ -1,0 +1,11 @@
+.catalog__choice_li_link {
+    text-decoration: none;
+    color: #929292;
+    margin:0;
+}
+
+
+
+.catalog__choice_li_link:visited {
+    color: transparent;
+}

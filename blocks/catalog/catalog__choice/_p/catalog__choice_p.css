@@ -1,0 +1,11 @@
+.catalog__choice_p {
+    margin: 0;
+    color: #333;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    margin-top:13px;
+    margin-left:15px;
+    list-style-type:disc;
+}

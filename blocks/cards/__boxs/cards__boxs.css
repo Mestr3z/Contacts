@@ -1,0 +1,4 @@
+.cards__boxs{
+    display: flex;
+    flex-direction: row;
+}

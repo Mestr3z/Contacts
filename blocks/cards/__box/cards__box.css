@@ -1,0 +1,11 @@
+.cards__box{
+    margin-left: 30px;
+    background-color: #FFF;
+    box-sizing: border-box;
+    max-width: 220px;
+    padding: 16px 46px 0px 46px;
+}
+
+.cards__box:first-child{
+    margin-left:0;
+}

@@ -1,0 +1,4 @@
+.cards__map{
+    display: flex;
+    flex-direction: row;
+}

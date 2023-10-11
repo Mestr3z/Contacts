@@ -1,0 +1,8 @@
+.button__yellow {
+    background-color: #F9AF19;
+    margin-top: 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+}
